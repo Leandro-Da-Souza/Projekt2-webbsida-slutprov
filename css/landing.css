@@ -1,0 +1,48 @@
+:root {
+    --neon: rgb(255, 0, 64);
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-image: url(../img/rocky-wall.png);
+    background-color: #000000;
+}
+
+.container > * {
+    padding: 10px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.container h1 {
+    margin-bottom: 1.6rem;
+    font-size: 4rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-style: italic;
+    padding: 1.4rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.5rem;
+    transition: all 500ms ease-in-out;
+    /* border: 0.4rem solid #fff; */
+}
+
+a:hover {
+    font-size: 1.8rem;
+}
+
+.neon {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff,
+        0 0 40px var(--neon), 0 0 80px var(--neon), 0 0 90px var(--neon),
+        0 0 100px var(--neon), 0 0 150px var(--neon);
+}
