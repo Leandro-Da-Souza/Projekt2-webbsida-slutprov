@@ -61,6 +61,10 @@ a {
         inset 0 0 4rem var(--neon-secondary-color);
 }
 
+a:hover {
+    opacity: 0.85;
+}
+
 .neon {
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff,
         0 0 40px var(--neon-primary-color), 0 0 80px var(--neon-primary-color),
