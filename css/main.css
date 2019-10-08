@@ -13,7 +13,10 @@ header nav {
     position: fixed;
     width: 100%;
     z-index: 1;
-    opacity: 0.8;
+    /* opacity: 0.8; */
+    min-height: 45px;
+    /* border-top: 1px solid #fff; */
+    border-bottom: 1px solid #fff;
 }
 
 header nav > * {
@@ -27,7 +30,8 @@ header nav ul {
 header nav ul li {
     list-style-type: none;
     padding: 5px 5px;
-    margin-top: 5px;
+    margin-top: 8px;
+    margin-right: 5px;
 }
 
 header nav ul li a {
@@ -49,6 +53,7 @@ header nav label {
     cursor: pointer;
     /* display: none; */
     visibility: hidden;
+    margin-top: 4px;
 }
 
 /* MAIN STYLES */
@@ -64,19 +69,48 @@ main section.landing {
     text-transform: uppercase;
     background-image: url(../img/home.jpg);
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    /* border: 10px solid black; */
+    border-bottom: 1px solid #fff;
 }
 
 main section.landing h1 {
     font-size: 3rem;
     font-style: italic;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
     color: white;
     background-color: #222;
     padding: 10px 20px;
     border-radius: 5px;
+    /* border: 1px solid #fff; */
+}
+
+section.about {
+    width: 100vw;
+    height: 80vh;
+}
+
+section.about .aboutText {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #222;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+section.about .aboutImg {
+    width: 100%;
+    height: 60%;
+    background-image: url(../img/david-klein--94oJK3PDQw-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 /* MEDIA QUERIES */
@@ -93,5 +127,9 @@ main section.landing h1 {
 
     header nav input:checked ~ .menu ul {
         display: block;
+    }
+
+    main section.landing {
+        background-size: cover;
     }
 }
