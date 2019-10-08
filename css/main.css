@@ -181,6 +181,31 @@ section.contact textarea {
     padding: 10px;
 }
 
+/* FOOTER STYLES */
+
+footer {
+    background: #222;
+    color: #eaeaea;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid white;
+}
+
+footer p:nth-child(1) {
+    padding: 10px;
+    align-self: center;
+}
+
+footer a {
+    display: block;
+    color: white;
+    background-color: black;
+    padding: 10px 20px;
+    border-radius: 50%;
+    margin: 10px 20px;
+}
+
 /* MEDIA QUERIES */
 @media (max-width: 700px) {
     header nav label {
